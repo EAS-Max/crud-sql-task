@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/EAS-Max/crud-sql-task/issues"
   },
-  "homepage": "https://github.com/EAS-Max/crud-sql-task#readme"
+  "homepage": "https://github.com/EAS-Max/crud-sql-task#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
