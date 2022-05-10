@@ -21,13 +21,13 @@ app.get('/api/categories/:id', require('./categoryActions/getByID.js').get);
 
 app.post('/api/categories', require('./categoryActions/create.js').post);
 
-// app.patch('/api/items/:id', require(''));
+// app.patch('/api/items/:id', require('').patch);
 
-// app.patch('/api/categories/:id', require('./categoryActions/update.js'));
+app.patch('/api/categories/:id', require('./categoryActions/update.js').patch);
 
 // app.delete('/api/items/:id', require(''));
 
-// app.delete('/api/categories/:id', require('./categoryActions/remove.js'));
+app.delete('/api/categories/:id', require('./categoryActions/remove.js').del);
 
 
 

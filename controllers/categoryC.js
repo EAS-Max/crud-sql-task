@@ -20,9 +20,9 @@ const remove = async (id) => {
     return response;
 }
 
-const update = async (id, name, category_id, price, image_url) => {
-    let response = await query('UPDATE categories SET name=?, category_id=?, price=?, image_url=? WHERE id=?', [name, category_id, price, image_url, id]);
-    return response;
+const update = async (id, name) => {
+    let row = await query('UPDATE categories SET name=? WHERE id=?', [name, id]);
+    return row;
 }
 
 module.exports = {
