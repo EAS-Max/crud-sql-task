@@ -5,7 +5,7 @@ const create = async (name, category_id, price, image_url) => {
     return
 }
 
-const getAll = async () => {
+const getCategories = async () => {
     const rows = await query("SELECT * FROM categories");
     return rows;
 }
@@ -23,4 +23,12 @@ const remove = async (id) => {
 const update = async (id, name, category_id, price, image_url) => {
     const response = await query("UPDATE categories SET name=?, category_id=?, price=?, image_url=? WHERE id=?", [name, category_id, price, image_url, id]);
     return response;
+}
+
+module.exports = {
+    getCategories,
+    getByID,
+    remove,
+    update,
+    create
 }

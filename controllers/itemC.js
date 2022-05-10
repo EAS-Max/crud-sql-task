@@ -5,7 +5,7 @@ const create = async (name) => {
     return
 }
 
-const getAll = async () => {
+const getItems = async () => {
     const rows = await query("SELECT * FROM items");
     return rows;
 }
@@ -23,4 +23,12 @@ const remove = async (id) => {
 const update = async (id, name) => {
     const response = await query("UPDATE items SET name=?, WHERE id=?", [name, id]);
     return response;
+}
+
+module.exports = {
+    getItems,
+    getByID,
+    remove,
+    update,
+    create
 }
