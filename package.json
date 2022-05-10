@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/EAS-Max/crud-sql-task#readme",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
   }
 }
