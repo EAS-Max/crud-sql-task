@@ -1,4 +1,4 @@
-const { remove } = require('../controllers/categoryC.js');
+const { remove } = require('../controllers/itemC.js');
 
 const del = async (req, res) => {
     try {

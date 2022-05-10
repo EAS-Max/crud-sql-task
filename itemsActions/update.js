@@ -1,4 +1,4 @@
-const { update } = require('../controllers/categoryC.js');
+const { update } = require('../controllers/itemC.js');
 
 const patch = async (req, res) => {
     console.log(req.params.id)

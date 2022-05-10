@@ -1,4 +1,4 @@
-const { getByID } = require('../controllers/categoryC')
+const { getByID } = require('../controllers/itemC.js')
 
 const get = async (req, res) => {
     try {
