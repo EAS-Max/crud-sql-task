@@ -1,0 +1,50 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "first-feature;get-categories",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "get categories",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to http://localhost:4000/api/categories",
+            "match": {
+              "location": "steps/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16608293
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 345975
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "first-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "First feature",
+    "tags": [],
+    "uri": "features/test.feature"
+  }
+]

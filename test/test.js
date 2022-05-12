@@ -6,7 +6,7 @@ describe("Catogory actions test", function () {
 
     describe("get categories test", function () {
 
-        var url = "http://localhost:3000/api/categories";
+        var url = "http://localhost:4000/api/categories";
 
         it("gets all catogories", function (done) {
             request(url, function (error, response, body) {
@@ -18,7 +18,7 @@ describe("Catogory actions test", function () {
 
     describe("get categories by ID test", function () {
 
-        var url = "http://localhost:3000/api/categories/1";
+        var url = "http://localhost:4000/api/categories/1";
 
         it("gets all catogories by ID", function (done) {
             request(url, function (error, response, body) {
@@ -30,7 +30,7 @@ describe("Catogory actions test", function () {
 
     describe("get all Items test", function () {
 
-        var url = "http://localhost:3000/api/items";
+        var url = "http://localhost:4000/api/items";
 
         it("gets all items", function (done) {
             request(url, function (error, response, body) {
@@ -42,7 +42,7 @@ describe("Catogory actions test", function () {
 
     describe("get items by ID test", function () {
 
-        var url = "http://localhost:3000/api/items/1";
+        var url = "http://localhost:4000/api/items/1";
 
         it("gets all items by ID", function (done) {
             request(url, function (error, response, body) {

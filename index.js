@@ -32,6 +32,6 @@ app.delete('/api/categories/:id', require('./categoryActions/remove.js').del);
 
 
 
-app.listen(3000, () => {
-    console.log('listening http://localhost:3000');
+app.listen(4000, () => {
+    console.log('listening http://localhost:4000');
 });
