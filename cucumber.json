@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19792214
+              "duration": 14972376
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 297366
+              "duration": 295384
             }
           }
         ],
@@ -56,7 +56,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14088705
+              "duration": 5329718
             }
           },
           {
@@ -69,7 +69,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138835
+              "duration": 157501
             }
           }
         ],
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4413052
+              "duration": 4014280.0000000005
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 349088
+              "duration": 156940
             }
           }
         ],
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5186363
+              "duration": 5344362
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 136668
+              "duration": 111092
             }
           }
         ],
@@ -157,5 +157,164 @@
     "name": "First feature",
     "tags": [],
     "uri": "features/first.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "item-testing;get-items",
+        "keyword": "Scenario Outline",
+        "line": 3,
+        "name": "get items",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I send a GET request to http://localhost:4000/api/items",
+            "match": {
+              "location": "steps/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2776459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106896
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "item-testing;update",
+        "keyword": "Scenario Outline",
+        "line": 7,
+        "name": "update",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I send PATCH request with {\"name\": \"drink\"} to http://localhost:4000/api/items/1",
+            "match": {
+              "location": "steps/steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2908724
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154031
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "item-testing;get-items-by-id",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "get items by id",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I send a GET request to http://localhost:4000/api/items/2",
+            "match": {
+              "location": "steps/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2678721
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I receive a response name of milk",
+            "match": {
+              "location": "steps/steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129612
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "item-testing;adding-contact",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "adding contact",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I send POST request with a {\"name\": \"boomPow\"} to http://localhost:4000/api/items",
+            "match": {
+              "location": "steps/steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3335475
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95205
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "item-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Item testing",
+    "tags": [],
+    "uri": "features/items.feature"
   }
 ]
