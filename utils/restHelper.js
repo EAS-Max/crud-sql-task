@@ -27,7 +27,7 @@ const patchData = async (url, data) => {
     }
 }
 
-const deleteData = async (url, data) => {
+const deleteData = async (url) => {
     try {
         return await axios.delete(url);
     } catch (e) {

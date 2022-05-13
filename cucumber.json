@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16608293
+              "duration": 19792214
             }
           },
           {
@@ -28,11 +28,122 @@
             "line": 6,
             "name": "I receive a status code of 200",
             "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297366
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "first-feature;update",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "update",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send PATCH request with {\"name\": \"drink\"} to http://localhost:4000/api/categories/1",
+            "match": {
               "location": "steps/steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 345975
+              "duration": 14088705
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138835
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "first-feature;get-categories-by-id",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "get categories by id",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I send a GET request to http://localhost:4000/api/categories/2",
+            "match": {
+              "location": "steps/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4413052
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I receive a response name of food",
+            "match": {
+              "location": "steps/steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349088
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "first-feature;adding-contact",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "adding contact",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I send POST request with a {\"name\": \"boomPow\"} to http://localhost:4000/api/categories",
+            "match": {
+              "location": "steps/steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5186363
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136668
             }
           }
         ],
@@ -45,6 +156,6 @@
     "keyword": "Feature",
     "name": "First feature",
     "tags": [],
-    "uri": "features/test.feature"
+    "uri": "features/first.feature"
   }
 ]
