@@ -20,6 +20,11 @@ When('I send POST request with a {} to {}', async function (data, url) {
     this.response = response;
 });
 
+When('I send a DELETE request to {}', async function (path) {
+    const response = await restHelper.deleteData(`${path}`);
+    this.response = response;
+});
+
 Then('I receive a response name of {}', async function (status) {
     assert.equal(this.response.data.name, status);
 });

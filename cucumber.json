@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 14972376
+              "duration": 21385088
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 6,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 295384
+              "duration": 325835
             }
           }
         ],
@@ -56,7 +56,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5329718
+              "duration": 15283107
             }
           },
           {
@@ -65,11 +65,11 @@
             "line": 10,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 157501
+              "duration": 95765
             }
           }
         ],
@@ -81,7 +81,7 @@
         "id": "first-feature;get-categories-by-id",
         "keyword": "Scenario Outline",
         "line": 12,
-        "name": "get categories by id",
+        "name": "get categories by ID",
         "steps": [
           {
             "arguments": [],
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4014280.0000000005
+              "duration": 4067821.0000000005
             }
           },
           {
@@ -102,11 +102,11 @@
             "line": 14,
             "name": "I receive a response name of food",
             "match": {
-              "location": "steps/steps.js:23"
+              "location": "steps/steps.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 156940
+              "duration": 127341.00000000001
             }
           }
         ],
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5344362
+              "duration": 5331587
             }
           },
           {
@@ -139,11 +139,48 @@
             "line": 19,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 111092
+              "duration": 137679
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "first-feature;delete-by-id",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "delete by ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I send a DELETE request to http://localhost:4000/api/categories/21",
+            "match": {
+              "location": "steps/steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6142985
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122385
             }
           }
         ],
@@ -178,7 +215,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2776459
+              "duration": 4053967
             }
           },
           {
@@ -187,11 +224,11 @@
             "line": 5,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 106896
+              "duration": 216799
             }
           }
         ],
@@ -215,7 +252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2908724
+              "duration": 5063619
             }
           },
           {
@@ -224,11 +261,11 @@
             "line": 9,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 154031
+              "duration": 153393
             }
           }
         ],
@@ -252,7 +289,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2678721
+              "duration": 3247974
             }
           },
           {
@@ -261,11 +298,11 @@
             "line": 13,
             "name": "I receive a response name of milk",
             "match": {
-              "location": "steps/steps.js:23"
+              "location": "steps/steps.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 129612
+              "duration": 114123
             }
           }
         ],
@@ -289,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3335475
+              "duration": 3799672
             }
           },
           {
@@ -298,11 +335,11 @@
             "line": 18,
             "name": "I receive a status code of 200",
             "match": {
-              "location": "steps/steps.js:32"
+              "location": "steps/steps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 95205
+              "duration": 87060
             }
           }
         ],
