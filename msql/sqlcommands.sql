@@ -34,4 +34,10 @@ INSERT INTO items
   (name, category_id, price, image_url) 
 VALUES
   ('PRIME', 1 , 3.56, '/data/PRIME.png'),
-  ('milk', 1 , 1.56, '/data/milk.png');
+  ('milk', 1 , 1.56, '/data/milk.png'),
+   ('PRIME', 1 , 3.56, '/data/PRIME.png'),
+  ('milk', 1 , 1.56, '/data/milk.png'),
+   ('PRIME', 1 , 3.56, '/data/PRIME.png'),
+  ('milk', 1 , 1.56, '/data/milk.png'),
+   ('PRIME', 1 , 3.56, '/data/PRIME.png'),
+  ('milk', 1 , 1.56, '/data/milk.png')

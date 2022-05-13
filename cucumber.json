@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21385088
+              "duration": 23357341
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 325835
+              "duration": 308963
             }
           }
         ],
@@ -56,7 +56,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15283107
+              "duration": 14641675
             }
           },
           {
@@ -69,7 +69,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95765
+              "duration": 109771
             }
           }
         ],
@@ -93,7 +93,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4067821.0000000005
+              "duration": 3400786
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 127341.00000000001
+              "duration": 215191
             }
           }
         ],
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5331587
+              "duration": 5121348
             }
           },
           {
@@ -143,7 +143,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137679
+              "duration": 117555
             }
           }
         ],
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6142985
+              "duration": 3209404
             }
           },
           {
@@ -180,7 +180,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 122385
+              "duration": 132653
             }
           }
         ],
@@ -215,7 +215,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4053967
+              "duration": 4288468
             }
           },
           {
@@ -228,7 +228,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 216799
+              "duration": 200552
             }
           }
         ],
@@ -252,7 +252,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5063619
+              "duration": 4029071
             }
           },
           {
@@ -265,7 +265,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153393
+              "duration": 161082
             }
           }
         ],
@@ -289,7 +289,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3247974
+              "duration": 2926182
             }
           },
           {
@@ -302,7 +302,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 114123
+              "duration": 94556
             }
           }
         ],
@@ -326,7 +326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3799672
+              "duration": 3496983
             }
           },
           {
@@ -339,7 +339,44 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87060
+              "duration": 83058
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "item-testing;delete-by-id",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "delete by ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I send a DELETE request to http://localhost:4000/api/items/5",
+            "match": {
+              "location": "steps/steps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4874829
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I receive a status code of 200",
+            "match": {
+              "location": "steps/steps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96581
             }
           }
         ],
